@@ -69,6 +69,12 @@ form fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 fieldset legend {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
@@ -82,12 +88,12 @@ fieldset legend {
 .input-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
 }
 
 .input-wrapper label {
   font-size: 0.875rem;
   line-height: 1.5rem;
+  margin-bottom: 0.5rem;
 
   color: #4e4958;
 }
@@ -98,17 +104,17 @@ fieldset legend {
   line-height: 1.25rem;
 
   color: #c1bccc;
-
-  margin-bottom: 0.5rem;
 }
 
 .input-wrapper input {
   font-size: 1rem;
+  line-height: 1.5rem;
 
   height: 3.5rem;
 
   padding: 0 1.5rem;
 
+  color: #c1bccc;
   background: #fafafc;
 
   border-radius: 0.5rem;
