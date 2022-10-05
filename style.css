@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap");
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+select,
+textarea {
   font-family: "Poppins", sans-serif;
+}
+
+body {
   background: #e5e5e5;
 }
 
@@ -33,6 +46,8 @@ header h1 {
   font-size: 2.25rem;
   line-height: 2.625rem;
   color: white;
+
+  margin-bottom: 1.5rem;
 }
 
 header p {
@@ -62,4 +77,40 @@ fieldset legend {
   width: 100%;
   border-bottom: 1px solid #e6e6f0;
   padding-bottom: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.input-wrapper label {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+
+  color: #4e4958;
+}
+
+.input-wrapper label span {
+  margin-left: 0.75rem;
+  font-size: 0.75;
+  line-height: 1.25rem;
+
+  color: #c1bccc;
+
+  margin-bottom: 0.5rem;
+}
+
+.input-wrapper input {
+  font-size: 1rem;
+
+  height: 3.5rem;
+
+  padding: 0 1.5rem;
+
+  background: #fafafc;
+
+  border-radius: 0.5rem;
+  border: 0.064rem solid #e6e6f0;
 }
