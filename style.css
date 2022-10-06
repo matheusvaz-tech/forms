@@ -8,7 +8,6 @@
 
 body,
 input,
-button,
 select,
 textarea {
   font-family: "Poppins", sans-serif;
@@ -209,11 +208,13 @@ footer {
   margin-bottom: 6rem;
 
   border-radius: 0 0 0.5rem 0.5rem;
+  border-top: 0.064rem solid #d6d6d6;
 }
 
-.form-buttons input {
+footer .button {
   height: 3.5rem;
 
+  font-family: "Archivo", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -223,4 +224,13 @@ footer {
   border-radius: 0.5rem;
 
   background: #04d361;
+}
+
+footer .button:hover {
+  background: #18ba61;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 0.064rem solid #ff1010;
 }
